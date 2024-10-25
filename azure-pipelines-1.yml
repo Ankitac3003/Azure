@@ -1,4 +1,5 @@
 # Node.js
+
 # Build a general Node.js project with npm.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
@@ -9,11 +10,20 @@ trigger:
 pool:
   MylocalPool
 
+
+
 steps:
 - task: NodeTool@0
   inputs:
     versionSpec: '20.x'
   displayName: 'Install Node.js'
+
+- task: configuration@1
+  inputs:
+    connection: 'ankit-LT-connection'
+    isTunnelActivate: false
+    isAppAutomate: false
+    isSmartUI: false
 
 - script: |
     npm install
