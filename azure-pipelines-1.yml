@@ -25,8 +25,13 @@ steps:
     isAppAutomate: false
     isSmartUI: false
 
-- script: |
-    npm install
-    npm run build
-    npm run SingleAndroidWeb
-  displayName: 'npm install and build'
+- script: npm install
+  displayName: "npm install"
+  
+- script: npm run SingleAndroidWeb
+  displayName: 'npm run commnad and build'
+# - script: |
+#     npm install
+#     npm run build
+#     npm run SingleAndroidWeb
+#   displayName: 'npm install and build'
