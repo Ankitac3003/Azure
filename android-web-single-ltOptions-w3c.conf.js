@@ -1,6 +1,6 @@
 exports.config = {
-    user: "sunilr",//process.env.LT_USERNAME || "YOUR_USERNAME",
-    key: "LtQPqIWXiN4kHjRSQ9juzDmQZV7tpbssbvyEJ13JPS4QfhGduU",//process.env.LT_ACCESS_KEY || "YOUR_ACCESS_KEY",
+    user: "ankitclambdatest",//process.env.LT_USERNAME || "YOUR_USERNAME",
+    key: "Jdss0sjCiLWvzHrnPwS2is9nklBaEEnMo6lE8XB24IiYLa3Jtn",//process.env.LT_ACCESS_KEY || "YOUR_ACCESS_KEY",
   
     updateJob: false,
     specs: ["android-web-test.js"],
