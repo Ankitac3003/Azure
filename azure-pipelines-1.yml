@@ -4,6 +4,9 @@ trigger:
 pool:
   name: MylocalPool
 
+variables:
+  LT_BUILD_NAME: '$(Build.BuildNumber)'  # Default, or override in pipeline variables or UI
+
 steps:
 - task: NodeTool@0
   inputs:
@@ -18,9 +21,10 @@ steps:
 
 - task: LambdatestResults@1
   inputs:
-    connection: 'ankit-LT-connection'  # Make sure this service connection exists
-    platform: 'Web Automation'         # Optional: depending on task version
-    testType: 'Mocha'                  # Set based on your test framework (e.g., Mocha, Jest, etc.)
+    connection: 'ankit-LT-connection'
+    platform: 'Web Automation'
+    testType: 'Mocha'
     isTunnelActivate: false
     isAppAutomate: false
     isSmartUI: false
+    build_name: '$(LT_BUILD_NAME)'
