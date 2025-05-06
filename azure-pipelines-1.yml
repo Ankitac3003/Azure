@@ -18,7 +18,9 @@ steps:
 
 - task: LambdatestResults@1
   inputs:
-    connection: 'ankit-LT-connection'
+    connection: 'ankit-LT-connection'  # Make sure this service connection exists
+    platform: 'Web Automation'         # Optional: depending on task version
+    testType: 'Mocha'                  # Set based on your test framework (e.g., Mocha, Jest, etc.)
     isTunnelActivate: false
     isAppAutomate: false
     isSmartUI: false
