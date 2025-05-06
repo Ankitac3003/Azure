@@ -25,4 +25,4 @@ steps:
     platform: 'Web Automation'
     testType: 'Mocha'
     isTunnelActivate: false
-    build_name: '$(LT_BUILD_NAME)'
+    build: '$(LT_BUILD_NAME)'
