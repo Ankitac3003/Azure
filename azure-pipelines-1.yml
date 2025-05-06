@@ -25,6 +25,4 @@ steps:
     platform: 'Web Automation'
     testType: 'Mocha'
     isTunnelActivate: false
-    isAppAutomate: false
-    isSmartUI: false
     build_name: '$(LT_BUILD_NAME)'
