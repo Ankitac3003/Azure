@@ -20,7 +20,7 @@ exports.config = {
           isRealMobile: true,
           enableCustomTranslation: true,
           w3c: true,
-          build: "Sample Build"
+          build: process.env.LT_BUILD_NAME
         }
       },
     ],
